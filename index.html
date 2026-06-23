@@ -832,7 +832,8 @@ body {
 
 <!-- NAV -->
 <nav class="nav-bar">
-  <button class="nav-btn active" onclick="show('today',this)"><span class="nav-dot" style="background:var(--pink)"></span> Today's Drop</button>
+  <button class="nav-btn active" onclick="show('brief',this)"><span class="nav-dot" style="background:var(--white)"></span> Daily Brief</button>
+  <button class="nav-btn" onclick="show('today',this)"><span class="nav-dot" style="background:var(--pink)"></span> Today's Drop</button>
   <button class="nav-btn" onclick="show('cannes',this)"><span class="nav-dot" style="background:var(--yellow)"></span> Cannes 2026</button>
   <button class="nav-btn" onclick="show('brands',this)"><span class="nav-dot" style="background:var(--blue)"></span> Brand Moves</button>
   <button class="nav-btn" onclick="show('trends',this)"><span class="nav-dot" style="background:var(--green)"></span> Trends</button>
@@ -842,7 +843,76 @@ body {
 </nav>
 
 <!-- ══ TODAY ══ -->
-<div id="today" class="section active">
+<div id="brief" class="section active">
+
+  <div style="display:grid;grid-template-columns:1fr auto;align-items:end;padding:2rem 1.5rem 1rem;border-bottom:1px solid var(--bg3);">
+    <div>
+      <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">No. 023 - Daily Brief</div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:72px;line-height:.9;color:var(--white);letter-spacing:-.02em;">The Brief<span style="color:var(--pink);">.</span></div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:15px;color:var(--muted);margin-top:8px;">Everything you need to know today, in one read.</div>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:48px;line-height:.9;color:var(--bg3);">JUN</div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:96px;line-height:.85;color:var(--white);">23</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:4px;">2026 - Cannes Week</div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;min-height:600px;">
+
+    <div style="padding:2rem 1.5rem;border-right:1px solid var(--bg3);display:flex;flex-direction:column;gap:2rem;">
+
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);margin-bottom:10px;">S1 - The Lead</div>
+        <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;margin-bottom:12px;">Cannes hands its Grand Prix to works that weaponize truth.</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-size:13px;line-height:1.8;color:var(--gray);">This year's Grand Prix winners share one trait: radical honesty deployed as a creative weapon. Dove's "Cost of Beauty" didn't sell beauty - it exposed the industry that profits from insecurity. Heinz's "It Has to Be Heinz" didn't claim superiority - it surfaced the subconscious loyalty people already had. The pattern is clear: the work winning in 2026 doesn't persuade audiences of something new. It reflects back something they already know but haven't heard a brand say out loud.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--yellow);margin-bottom:10px;">S2 - Cannes 2026</div>
+        <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;line-height:.95;color:var(--white);letter-spacing:-.01em;margin-bottom:10px;">Three things every jury is rewarding this week.</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-size:13px;line-height:1.8;color:var(--gray);">First: AI used as craft, not as shortcut - jurors are distinguishing between work that uses AI to do less, and work that uses AI to do the impossible. Second: media as message - the channel choice IS the creative idea, not a distribution decision. Third: brand behavior over brand voice - what a company actually does in a crisis outweighs any campaign it runs about caring. The highest-scoring entries are ones where a brand's action created the story, and the advertising simply reported it.</div>
+      </div>
+
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;">S3 - Brand Moves</div>
+        <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;line-height:.95;color:var(--white);letter-spacing:-.01em;margin-bottom:10px;">Nike reclaims its voice. Apple goes quieter than ever.</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-size:13px;line-height:1.8;color:var(--gray);">Nike's return to long-form storytelling marks the end of its social-first experiment - the brand is betting depth beats reach. Meanwhile Apple's Cannes entries this year have almost no copy at all: just product, environment, and silence. Two of the world's most valuable brands are taking opposite creative bets, and both are winning. The lesson isn't which approach is right - it's that a clear creative philosophy, fully committed to, is the only thing that actually works.</div>
+      </div>
+
+    </div>
+
+    <div style="display:flex;flex-direction:column;">
+
+      <div style="padding:2rem 1.5rem;border-bottom:1px solid var(--bg3);">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:10px;">S4 - Signals</div>
+        <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;line-height:.95;color:var(--white);letter-spacing:-.01em;margin-bottom:10px;">Three forces reshaping creative work right now.</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-size:13px;line-height:1.8;color:var(--gray);">The post-purpose era is here - audiences are fatigued by brands speaking to causes they have no credibility in. Utility-forward creativity is taking its place: solve a real problem beautifully, and the brand message is implicit. Simultaneously, craft is having a genuine resurgence - handmade, imperfect, textured work is cutting through the AI-smooth aesthetic. And the brief is shrinking. The best work of 2026 can be described in one sentence. If it takes a paragraph to explain the idea, it isn't one.</div>
+      </div>
+
+      <div style="padding:2rem 1.5rem;border-bottom:1px solid var(--bg3);">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--purple);margin-bottom:10px;">S5 - Art Direction</div>
+        <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;line-height:.95;color:var(--white);letter-spacing:-.01em;margin-bottom:10px;">The visual language winning at Cannes is brutally simple.</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-size:13px;line-height:1.8;color:var(--gray);">Single image. Extreme negative space. One typographic decision made with complete conviction. The award-winning art direction this year is not complex - it's inevitable. Every element that could be removed has been. What remains is the idea in its most concentrated form. Reference: Hito Steyerl's density paradox, Dieter Rams' ten principles, and the wayfinding systems of Massimo Vignelli. Know what to leave out.</div>
+      </div>
+
+      <div style="padding:2rem 1.5rem;border-bottom:1px solid var(--bg3);">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin-bottom:10px;">S6 - Indonesia Way In</div>
+        <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;line-height:.95;color:var(--white);letter-spacing:-.01em;margin-bottom:10px;">Today: a country growing at 5% while 13 million fall out of the middle class.</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-size:13px;line-height:1.8;color:var(--gray);">Indonesia's economic paradox is the brief no one has written yet. GDP grows. The middle class shrinks. More than half the population now lives below the middle-class threshold - yet the headline number says the country is thriving. The brand that names this honestly and builds something real around it will earn trust no campaign can manufacture. The Indonesia Way In section has 9 sourced insights this week. The best creative work in this market isn't waiting to be discovered - it's waiting to be made.</div>
+      </div>
+
+      <div style="padding:1.5rem;display:flex;flex-direction:column;gap:8px;flex:1;justify-content:flex-end;">
+        <div style="height:1px;background:var(--bg3);"></div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:11px;color:var(--muted);line-height:1.7;">Curated by Syandy Han &middot; <a href="https://id.linkedin.com/in/syandy-han-97061494" target="_blank" style="color:var(--muted);text-decoration:underline;">LinkedIn</a><br>Sources: Adweek, Contagious, LBBOnline, Ad Age, Cannes Lions 2026</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div id="today" class="section">
   <div class="hero-block">
     <div class="hero-main">
       <div class="label-block lb-pink">↑ Cover Story</div>
