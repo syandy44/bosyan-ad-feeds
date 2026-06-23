@@ -804,7 +804,7 @@ body {
 <!-- MASTHEAD -->
 <header class="masthead">
   <div>
-    <div class="masthead-meta">Daily Creative Intelligence &nbsp;·&nbsp; Vol. XXIII &nbsp;·&nbsp; Cannes Week</div>
+    <div class="masthead-meta">Weekly Creative Intelligence &nbsp;·&nbsp; Vol. XXIII &nbsp;·&nbsp; Cannes Week</div>
     <div class="logotype">
       <div class="logo-bosyan">BOSYAN</div>
       <div class="logo-subline">
@@ -812,12 +812,18 @@ body {
         <div class="logo-sep"></div>
         <div class="logo-feeds">
           <div class="logo-feeds-word">FEEDS</div>
-          <div class="logo-feeds-sub">The creative brief, daily</div>
+          <div class="logo-feeds-sub">The creative brief, weekly</div>
         </div>
       </div>
     </div>
   </div>
   <div class="masthead-right">
+    <!-- COUNTDOWN -->
+    <div id="countdown-block" style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;border-right:1px solid var(--bg3);padding-right:16px;margin-right:4px;">
+      <div style="font-family:'PPNY',serif;font-weight:500;font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);">Next Update</div>
+      <div id="countdown-timer" style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;letter-spacing:-.01em;color:var(--white);line-height:1;">--d : --h : --m : --s</div>
+      <div id="countdown-date" style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:9px;color:var(--muted);">Mon · 9AM WIB</div>
+    </div>
     <div class="issue-block">
       <div class="issue-num">№&thinsp;023</div>
       <div class="issue-label">Issue</div>
@@ -829,6 +835,44 @@ body {
     </button>
   </div>
 </header>
+
+
+<!-- WARC DATA STRIP -->
+<div style="border-bottom:1px solid var(--bg3);background:var(--bg2);overflow-x:auto;">
+  <div style="display:flex;align-items:stretch;min-width:max-content;">
+    <div style="padding:10px 16px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
+      <div style="font-family:'PPNY',serif;font-weight:500;font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);">By the Numbers · <a href="https://www.warc.com/en" target="_blank" style="color:var(--muted);text-decoration:underline;">WARC 2026</a></div>
+    </div>
+    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">$1.3T</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Global ad spend 2026 <span style="color:var(--green);">+9.1%</span></div>
+    </div>
+    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">82.4%</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">of all ad spend is digital</div>
+    </div>
+    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">$200B</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Retail media spend globally</div>
+    </div>
+    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">9/10</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">New ad dollars go digital</div>
+    </div>
+    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">45%</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Creator ad spend on Meta <span style="color:var(--red);">wasted</span></div>
+    </div>
+    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">70.4%</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Top 10 markets = world spend</div>
+    </div>
+    <div style="padding:10px 20px;display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--yellow);line-height:1;">#1</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Unilever: Creative + Media + Effectiveness</div>
+    </div>
+  </div>
+</div>
 
 <!-- NAV -->
 <nav class="nav-bar">
@@ -1703,5 +1747,49 @@ body {
     setTimeout(() => { el.style.display = 'none'; }, 2600);
   }
 </script>
+
+<script>
+(function() {
+  function getNextMonday9amWIB() {
+    // WIB = UTC+7
+    var now = new Date();
+    var utc = now.getTime() + now.getTimezoneOffset() * 60000;
+    var wib = new Date(utc + 7 * 3600000);
+    var day = wib.getDay(); // 0=Sun, 1=Mon
+    var daysUntilMon = (day === 0) ? 1 : (8 - day) % 7 || 7;
+    // If today is Monday but before 9am, target is today at 9am
+    if (day === 1 && wib.getHours() < 9) daysUntilMon = 0;
+    var nextMon = new Date(wib);
+    nextMon.setDate(wib.getDate() + daysUntilMon);
+    nextMon.setHours(9, 0, 0, 0);
+    // Convert back to UTC ms
+    return nextMon.getTime() - 7 * 3600000;
+  }
+
+  function pad(n) { return n < 10 ? '0' + n : n; }
+
+  function tick() {
+    var target = getNextMonday9amWIB();
+    var now = Date.now();
+    var diff = Math.max(0, target - now);
+
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+
+    var el = document.getElementById('countdown-timer');
+    if (el) el.textContent = d + 'd : ' + pad(h) + 'h : ' + pad(m) + 'm : ' + pad(s) + 's';
+
+    // Color pulse when < 1 hour
+    if (diff < 3600000 && el) el.style.color = 'var(--pink)';
+    else if (el) el.style.color = 'var(--white)';
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+
 </body>
 </html>
