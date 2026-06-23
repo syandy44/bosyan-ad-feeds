@@ -798,6 +798,7 @@ body {
   line-height: 1.7;
 }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
 
@@ -829,50 +830,19 @@ body {
       <div class="issue-label">Issue</div>
     </div>
     <div class="date-badge">Jun 23, 2026</div>
-    <button class="share-btn" onclick="shareThis()">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-      Share ↗
-    </button>
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      <button class="share-btn" onclick="shareThis()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        Share ↗
+      </button>
+      <button id="pdf-btn" class="share-btn" onclick="downloadPDF()" style="background:var(--bg3);border-color:var(--bg3);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download PDF
+      </button>
+    </div>
   </div>
 </header>
 
-
-<!-- WARC DATA STRIP -->
-<div style="border-bottom:1px solid var(--bg3);background:var(--bg2);overflow-x:auto;">
-  <div style="display:flex;align-items:stretch;min-width:max-content;">
-    <div style="padding:10px 16px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
-      <div style="font-family:'PPNY',serif;font-weight:500;font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);">By the Numbers · <a href="https://www.warc.com/en" target="_blank" style="color:var(--muted);text-decoration:underline;">WARC 2026</a></div>
-    </div>
-    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
-      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">$1.3T</div>
-      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Global ad spend 2026 <span style="color:var(--green);">+9.1%</span></div>
-    </div>
-    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
-      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">82.4%</div>
-      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">of all ad spend is digital</div>
-    </div>
-    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
-      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">$200B</div>
-      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Retail media spend globally</div>
-    </div>
-    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
-      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">9/10</div>
-      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">New ad dollars go digital</div>
-    </div>
-    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
-      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">45%</div>
-      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Creator ad spend on Meta <span style="color:var(--red);">wasted</span></div>
-    </div>
-    <div style="padding:10px 20px;border-right:1px solid var(--bg3);display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
-      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--white);line-height:1;">70.4%</div>
-      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Top 10 markets = world spend</div>
-    </div>
-    <div style="padding:10px 20px;display:flex;flex-direction:column;justify-content:center;gap:2px;flex-shrink:0;">
-      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:22px;color:var(--yellow);line-height:1;">#1</div>
-      <div style="font-family:'PPNY',serif;font-weight:300;font-size:10px;color:var(--muted);">Unilever: Creative + Media + Effectiveness</div>
-    </div>
-  </div>
-</div>
 
 <!-- NAV -->
 <nav class="nav-bar">
@@ -1727,7 +1697,32 @@ body {
     document.getElementById(id).classList.add('active');
     btn.classList.add('active');
   }
-  function shareThis() {
+  function downloadPDF() {
+  var btn = document.getElementById('pdf-btn');
+  btn.textContent = 'Generating…';
+  btn.style.opacity = '.6';
+  btn.style.pointerEvents = 'none';
+
+  // Capture the active section
+  var active = document.querySelector('.section.active') || document.getElementById('brief');
+  var date = new Date().toISOString().slice(0,10);
+
+  var opt = {
+    margin:       [12, 12, 12, 12],
+    filename:     'bosyan-ad-feeds-' + date + '.pdf',
+    image:        { type: 'jpeg', quality: 0.95 },
+    html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#1C1C1C' },
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+  };
+
+  html2pdf().set(opt).from(active).save().then(function() {
+    btn.textContent = 'Download PDF';
+    btn.style.opacity = '1';
+    btn.style.pointerEvents = 'auto';
+  });
+}
+
+function shareThis() {
     const url = window.location.href;
     const toast = document.getElementById('toast');
     if (navigator.clipboard && navigator.clipboard.writeText) {
