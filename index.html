@@ -56,6 +56,7 @@
   --yellow: #F5A623;
   --pink:   #E8579A;
   --purple: #8B5CF6;
+  --orange: #E8620A;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -335,15 +336,15 @@ body {
 
 /* ── ARROW ── */
 .arrow-block {
-  width: 44px; height: 44px;
-  border-radius: 8px;
+  width: 60px; height: 60px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'PPNYCond', serif;
-  font-weight: 800;
-  font-size: 22px;
   flex-shrink: 0;
+}
+.arrow-block svg {
+  width: 32px; height: 32px;
 }
 
 /* ── HERO ── */
@@ -837,6 +838,7 @@ body {
   <button class="nav-btn" onclick="show('trends',this)"><span class="nav-dot" style="background:var(--green)"></span> Trends</button>
   <button class="nav-btn" onclick="show('artdir',this)"><span class="nav-dot" style="background:var(--purple)"></span> Art Direction</button>
   <button class="nav-btn" onclick="show('creative',this)"><span class="nav-dot" style="background:var(--red)"></span> Creative Spotlight</button>
+  <button class="nav-btn" onclick="show('wayins',this)"><span class="nav-dot" style="background:var(--orange)"></span> Indonesia Way In</button>
 </nav>
 
 <!-- ══ TODAY ══ -->
@@ -876,7 +878,7 @@ body {
       <div class="story-dek">First global campaign drops hot off a Manhattan opening. Primark is betting U.S. shoppers are ready — and hungry for affordable fashion from a brand they're still learning to spell.</div>
       <div><a href="https://www.adweek.com/creativity/primark-takes-its-boldest-shot-yet-at-winning-over-american-shoppers/" target="_blank" class="btn">Read Story ↗</a></div>
     </div>
-    <div class="story-action"><div class="arrow-block" style="background:var(--blue);">→</div></div>
+    <div class="story-action"><div class="arrow-block" style="background:var(--blue);color:#fff;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
   </div>
   <div class="story-row">
     <div class="story-num-block">§2</div>
@@ -886,7 +888,7 @@ body {
       <div class="story-dek">In an era of AI-generated everything, Etsy plants its flag in the handmade — arguing a gift chosen by a real person hits different. Spoiler: they're right.</div>
       <div><a href="https://www.adweek.com/creativity/etsy-bets-human-moments-still-matter-more-than-algorithms/" target="_blank" class="btn">Read Story ↗</a></div>
     </div>
-    <div class="story-action"><div class="arrow-block" style="background:var(--green);">→</div></div>
+    <div class="story-action"><div class="arrow-block" style="background:var(--green);color:#fff;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
   </div>
   <div class="story-row">
     <div class="story-num-block">§3</div>
@@ -896,7 +898,7 @@ body {
       <div class="story-dek">No single hero spot. Nike unveiled a World Cup content cast playing a long, serialized narrative game. New playbook, new era of sports storytelling.</div>
       <div><a href="https://www.adweek.com/creativity/nikes-surprise-world-cup-cast-signals-a-new-marketing-playbook/" target="_blank" class="btn">Read Story ↗</a></div>
     </div>
-    <div class="story-action"><div class="arrow-block" style="background:var(--yellow);color:var(--bg);">→</div></div>
+    <div class="story-action"><div class="arrow-block" style="background:var(--yellow);color:var(--bg);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
   </div>
   <div class="story-row">
     <div class="story-num-block">§4</div>
@@ -906,7 +908,7 @@ body {
       <div class="story-dek">Sustainable energy brand launches a free tool converting digital ads into lower-energy dark mode versions. The campaign IS the product. Chef's kiss.</div>
       <div><a href="https://www.contagious.com/en/news-and-views" target="_blank" class="btn">Read Story ↗</a></div>
     </div>
-    <div class="story-action"><div class="arrow-block" style="background:var(--purple);">→</div></div>
+    <div class="story-action"><div class="arrow-block" style="background:var(--purple);color:#fff;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
   </div>
   <div class="callout">
     <div class="callout-icon" style="background:var(--bg3);">↗</div>
@@ -967,7 +969,7 @@ body {
       <div class="story-dek">After a high-profile Manhattan opening, Primark is betting American shoppers are finally ready. This is the most important brief they've ever run — results will determine whether they crack the U.S. for real.</div>
       <div><a href="https://www.adweek.com/creativity/primark-takes-its-boldest-shot-yet-at-winning-over-american-shoppers/" target="_blank" class="btn">Full Story ↗</a></div>
     </div>
-    <div class="story-action"><div class="arrow-block" style="background:var(--blue);">↑</div></div>
+    <div class="story-action"><div class="arrow-block" style="background:var(--blue);color:#fff;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></div></div>
   </div>
   <div class="story-row">
     <div class="story-num-block">§2</div>
@@ -977,7 +979,7 @@ body {
       <div class="story-dek">Visa is going big with Ted Lasso energy — leaning on Sudeikis' soccer credibility to connect with a newly passionate American fan base. Exclusive perks, humor, right person, right moment.</div>
       <div><a href="https://www.adweek.com/creativity/visa-recruits-jason-sudeikis-to-score-big-at-the-2026-world-cup/" target="_blank" class="btn">Full Story ↗</a></div>
     </div>
-    <div class="story-action"><div class="arrow-block" style="background:var(--yellow);color:var(--bg);">↗</div></div>
+    <div class="story-action"><div class="arrow-block" style="background:var(--yellow);color:var(--bg);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></div>
   </div>
   <div class="story-row">
     <div class="story-num-block">§3</div>
@@ -987,7 +989,7 @@ body {
       <div class="story-dek">Hot dog racing drives 500K extra wiener sales — so you scale it. New contenders, real coaches, live nationwide broadcast. When brand marketing works, you don't retreat. You double down.</div>
       <div><a href="https://www.adweek.com/creativity/oscar-mayers-wienie-500-goes-bigger-after-500k-sales-bump/" target="_blank" class="btn">Full Story ↗</a></div>
     </div>
-    <div class="story-action"><div class="arrow-block" style="background:var(--red);">↑</div></div>
+    <div class="story-action"><div class="arrow-block" style="background:var(--red);color:#fff;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></div></div>
   </div>
   <div class="story-row">
     <div class="story-num-block">§4</div>
@@ -997,7 +999,7 @@ body {
       <div class="story-dek">Etsy's campaign declares the algorithm irrelevant for moments that matter. A chatbot didn't pick that gift. Etsy will remind you every chance it gets.</div>
       <div><a href="https://www.adweek.com/creativity/etsy-bets-human-moments-still-matter-more-than-algorithms/" target="_blank" class="btn">Full Story ↗</a></div>
     </div>
-    <div class="story-action"><div class="arrow-block" style="background:var(--green);">→</div></div>
+    <div class="story-action"><div class="arrow-block" style="background:var(--green);color:#fff;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>
   </div>
 </div>
 
@@ -1136,14 +1138,349 @@ body {
   </div>
 </div>
 
+
+<!-- ══ INDONESIA WAY IN ══ -->
+<div id="wayins" class="section">
+  <div class="sec-header">
+    <div>
+      <div class="sec-eyebrow">Insight Library · Sourced from Indonesian Data & Research</div>
+      <div class="sec-title" style="color:var(--orange);">Indonesia<br>Way In →</div>
+    </div>
+    <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;color:var(--muted);text-align:right;max-width:220px;line-height:1.7;">Real Indonesian truths hiding in plain sight. Each one is a door to an award-winning idea.</div>
+  </div>
+
+  <!-- HOW TO READ THIS -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--bg3);border-bottom:1px solid var(--bg3);">
+    <div style="padding:.75rem 1rem;border-right:1px solid var(--bg3);">
+      <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;">Step 1</div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:15px;color:var(--white);">THE INSIGHT</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:11px;color:var(--muted);">A surprising Indonesian truth</div>
+    </div>
+    <div style="padding:.75rem 1rem;border-right:1px solid var(--bg3);">
+      <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;">Step 2</div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:15px;color:var(--white);">THE TENSION</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:11px;color:var(--muted);">The paradox that creates opportunity</div>
+    </div>
+    <div style="padding:.75rem 1rem;border-right:1px solid var(--bg3);">
+      <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;">Step 3</div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:15px;color:var(--white);">WAY IN →</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:11px;color:var(--muted);">Which brand category this unlocks</div>
+    </div>
+    <div style="padding:.75rem 1rem;">
+      <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;">Step 4</div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:15px;color:var(--white);">IDEA SPARK</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:11px;color:var(--muted);">One bold creative direction</div>
+    </div>
+  </div>
+
+  <!-- INSIGHT CARDS -->
+  <div class="two-col" style="border-top:1px solid var(--bg3);">
+
+    <!-- 01 Bogor Lightning -->
+    <div style="background:var(--bg2);border-right:1px solid var(--bg3);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--yellow);">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">⚡ Geography</span>
+        <span style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">Guinness World Records · IPB University</span>
+      </div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;">Bogor Receives Lightning<br>322 Days a Year</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:12px;line-height:1.7;color:#aaa;">Bogor, West Java holds the Guinness World Record for highest keraunic level on Earth — 322 thunder days per year, 24 strikes per km². Florida, the USA's lightning capital, has half that. In Bogor, lightning isn't extraordinary. It's Tuesday.</div>
+      <div style="height:1px;background:var(--bg3);"></div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">The Tension</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;line-height:1.65;color:var(--gray);">The world's most electrified city treats its greatest danger as background noise. When the extraordinary becomes invisible, who's responsible?</div>
+      </div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Way In →</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">Insurance</span>
+          <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">Energy</span>
+          <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">Safety Tech</span>
+          <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">Infrastructure</span>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:.75rem 1rem;">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Idea Spark ↗</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:12px;line-height:1.65;color:var(--white);">An insurance brand builds Bogor's first free public lightning shelter network — branding safety infrastructure in the city that needs it most, visibly.</div>
+      </div>
+      <a href="https://www.ipb.ac.id/news/index/2024/04/ipb-university-meteorologist-reveals-the-reason-for-the-large-number-of-lightning-in-bogor/" target="_blank" class="btn" style="font-size:10px;align-self:flex-start;">Source ↗</a>
+    </div>
+
+    <!-- 02 Mudik -->
+    <div style="background:var(--bg2);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--pink);">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="label-block lb-pink" style="font-size:9px;padding:3px 8px;">🏠 Culture</span>
+        <span style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">ResearchGate · BPS Indonesia</span>
+      </div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;">20 Million People Move<br>for a Feeling</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:12px;line-height:1.7;color:#aaa;">Mudik — Indonesia's annual Eid homecoming migration — moves 18–23 million people from city to village in under 72 hours. It's the world's largest synchronized annual human movement, driven not by economics, jobs, or necessity. Only by the need to go home.</div>
+      <div style="height:1px;background:var(--bg3);"></div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">The Tension</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;line-height:1.65;color:var(--gray);">Every brand chases reach. But for 72 hours a year, 20 million Indonesians leave cities and brands behind. The brands that follow them home win everything.</div>
+      </div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Way In →</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="label-block lb-pink" style="font-size:9px;padding:3px 8px;">Telecom</span>
+          <span class="label-block lb-pink" style="font-size:9px;padding:3px 8px;">FMCG</span>
+          <span class="label-block lb-pink" style="font-size:9px;padding:3px 8px;">Transport</span>
+          <span class="label-block lb-pink" style="font-size:9px;padding:3px 8px;">Banking</span>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:.75rem 1rem;">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Idea Spark ↗</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:12px;line-height:1.65;color:var(--white);">A telecom brand activates free calling to any hometown during Eid week — turning their network into the infrastructure of belonging, not just connectivity.</div>
+      </div>
+      <a href="https://www.researchgate.net/publication/324195392_Specific_Migration_in_Indonesia_Mudik_and_Balik_Lebaran" target="_blank" class="btn" style="font-size:10px;align-self:flex-start;">Source ↗</a>
+    </div>
+
+    <!-- 03 Languages Dying -->
+    <div style="background:var(--bg2);border-right:1px solid var(--bg3);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--purple);">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="label-block lb-purple" style="font-size:9px;padding:3px 8px;">🗣 Language</span>
+        <span style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">Seasia.co · Rest of World · Cornell</span>
+      </div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;">425 of Indonesia's<br>700 Languages Are Dying</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:12px;line-height:1.7;color:#aaa;">Indonesia tops Asia in endangered languages. Linguists predict the nation's 700+ tongues will collapse to roughly 50 within a century. The irony: it was Bahasa Indonesia — a deliberately invented unifying language — that began crowding them out. One country built on a language that is now erasing all others.</div>
+      <div style="height:1px;background:var(--bg3);"></div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">The Tension</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;line-height:1.65;color:var(--gray);">Unity was built on language. And that same unity is erasing 425 of them. When a country forgets its own voices, who records the last word?</div>
+      </div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Way In →</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="label-block lb-purple" style="font-size:9px;padding:3px 8px;">Tech / AI</span>
+          <span class="label-block lb-purple" style="font-size:9px;padding:3px 8px;">Telecom</span>
+          <span class="label-block lb-purple" style="font-size:9px;padding:3px 8px;">Education</span>
+          <span class="label-block lb-purple" style="font-size:9px;padding:3px 8px;">Media</span>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:.75rem 1rem;">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Idea Spark ↗</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:12px;line-height:1.65;color:var(--white);">A tech brand trains AI on the last 50 speakers of Indonesia's most endangered languages — so the voices survive even after the speakers are gone.</div>
+      </div>
+      <a href="https://seasia.co/2025/05/20/indonesia-tops-asia-in-endangered-languages-425-at-risk-of-disappearing" target="_blank" class="btn" style="font-size:10px;align-self:flex-start;">Source ↗</a>
+    </div>
+
+    <!-- 04 Mangrove Paradox -->
+    <div style="background:var(--bg2);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--green);">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="label-block lb-green" style="font-size:9px;padding:3px 8px;">🌿 Environment</span>
+        <span style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">CIFOR · PNAS · PMC</span>
+      </div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;">Indonesia Has the World's<br>Most Mangroves & Destroys<br>Them Fastest</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:12px;line-height:1.7;color:#aaa;">23% of all mangrove forests on earth are Indonesian. But 40% have vanished in 30 years — lost at 100,000 hectares per year. Only 15% is protected. A country that holds the world's greatest coastal carbon sink is also its fastest destroyer. The guardian is also the threat.</div>
+      <div style="height:1px;background:var(--bg3);"></div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">The Tension</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;line-height:1.65;color:var(--gray);">The country with the most power to fight climate change is using that power against itself. The same coastlines that protect 270 million people are disappearing under their watch.</div>
+      </div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Way In →</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="label-block lb-green" style="font-size:9px;padding:3px 8px;">FMCG</span>
+          <span class="label-block lb-green" style="font-size:9px;padding:3px 8px;">Banking</span>
+          <span class="label-block lb-green" style="font-size:9px;padding:3px 8px;">Retail</span>
+          <span class="label-block lb-green" style="font-size:9px;padding:3px 8px;">Government</span>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:.75rem 1rem;">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Idea Spark ↗</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:12px;line-height:1.65;color:var(--white);">An FMCG brand prints a GPS coordinate on every product — the exact mangrove tree that your purchase planted, one you can actually visit.</div>
+      </div>
+      <a href="https://www.forestsnews.org/31178/indonesian-mangroves-special-fact-file-a-global-treasure-under-threat?fnl=en" target="_blank" class="btn" style="font-size:10px;align-self:flex-start;">Source ↗</a>
+    </div>
+
+    <!-- 05 Instant Noodle Nation -->
+    <div style="background:var(--bg2);border-right:1px solid var(--bg3);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--orange);">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="label-block" style="background:var(--orange);color:#fff;font-size:9px;padding:3px 8px;">🍜 Food Culture</span>
+        <span style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">Statista · WINA · Indonesia Investments</span>
+      </div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;">14.5 Billion Packs of<br>Instant Noodles a Year</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:12px;line-height:1.7;color:#aaa;">Indonesia consumes 14.54 billion servings of instant noodles per year — #2 in the world, #1 in Southeast Asia. Per capita, only Japan eats more. Introduced 50 years ago as an emergency food product, the instant noodle is now a cultural identity: comfort, survival, and a $4-billion nutrition crisis hiding in plain sight.</div>
+      <div style="height:1px;background:var(--bg3);"></div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">The Tension</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;line-height:1.65;color:var(--gray);">The most beloved food in the country is also its most significant nutrition problem. A nation that eats 40 million packs a day has normalized an emergency ration as a cultural staple.</div>
+      </div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Way In →</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="label-block" style="background:var(--orange);color:#fff;font-size:9px;padding:3px 8px;">Food Brand</span>
+          <span class="label-block" style="background:var(--orange);color:#fff;font-size:9px;padding:3px 8px;">Health</span>
+          <span class="label-block" style="background:var(--orange);color:#fff;font-size:9px;padding:3px 8px;">NGO</span>
+          <span class="label-block" style="background:var(--orange);color:#fff;font-size:9px;padding:3px 8px;">FMCG</span>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:.75rem 1rem;">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Idea Spark ↗</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:12px;line-height:1.65;color:var(--white);">A food brand redesigns the country's most-eaten product packet to also serve as a daily nutrient supplement — fortifying the ritual, not fighting it.</div>
+      </div>
+      <a href="https://www.indonesia-investments.com/news/news-columns/food-culture-explaining-indonesians-huge-appetite-for-instant-noodles/item8996" target="_blank" class="btn" style="font-size:10px;align-self:flex-start;">Source ↗</a>
+    </div>
+
+    <!-- 06 Jam Karet -->
+    <div style="background:var(--bg2);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--blue);">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">⏱ Behavior</span>
+        <span style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">Java Private Tour · Gindoo · Batam News Asia</span>
+      </div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;">Indonesia Has a Cultural<br>Name for Being Late:<br><em style="color:var(--blue);">Jam Karet</em></div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:12px;line-height:1.7;color:#aaa;">"Jam Karet" — rubber time — is a widely accepted cultural reality where being 30–45 minutes late is normal and expected. It's rooted in polychronic culture: relationships and social harmony always outrank the clock. In Indonesia, time bends around people. Not the other way around.</div>
+      <div style="height:1px;background:var(--bg3);"></div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">The Tension</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;line-height:1.65;color:var(--gray);">A culture that prioritizes people over punctuality sounds warm — until you calculate the economic cost. What happens when a country's most human quality becomes its most expensive habit?</div>
+      </div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Way In →</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">Fintech</span>
+          <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">Transport</span>
+          <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">Productivity</span>
+          <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">Watch / Lifestyle</span>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:.75rem 1rem;">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Idea Spark ↗</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:12px;line-height:1.65;color:var(--white);">A bank launches "The Rubber Time Report" — a real data campaign showing exactly how much lateness costs the Indonesian economy per year, then offers micro-insurance for missed opportunities.</div>
+      </div>
+      <a href="https://javaprivatetour.com/what-is-jam-karet-understanding-indonesian-rubber-time" target="_blank" class="btn" style="font-size:10px;align-self:flex-start;">Source ↗</a>
+    </div>
+
+
+    <!-- 07 Three Earthquakes Per Day -->
+    <div style="background:var(--bg2);border-right:1px solid var(--bg3);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--red);">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="label-block lb-red" style="font-size:9px;padding:3px 8px;">🌋 Geology</span>
+        <span style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">Indonesia Investments · LiveScience</span>
+      </div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;">3 Earthquakes of Mag 5+<br>Every. Single. Day.</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:12px;line-height:1.7;color:#aaa;">Indonesia sits at the collision of the Eurasian, Pacific, and Indo-Australian tectonic plates. Average: 3 earthquakes above magnitude 5 daily. 127 active volcanoes. More major quakes (7.5+) in the 20th century than all of North and South America combined. 5 million Indonesians live in active danger zones.</div>
+      <div style="height:1px;background:var(--bg3);"></div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">The Tension</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;line-height:1.65;color:var(--gray);">The planet's most geologically violent nation is also one of its most densely populated. Indonesians don't avoid disaster zones — they build cities in them. Danger is not an edge case. It's the address.</div>
+      </div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Way In →</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="label-block lb-red" style="font-size:9px;padding:3px 8px;">Insurance</span>
+          <span class="label-block lb-red" style="font-size:9px;padding:3px 8px;">Construction</span>
+          <span class="label-block lb-red" style="font-size:9px;padding:3px 8px;">Government</span>
+          <span class="label-block lb-red" style="font-size:9px;padding:3px 8px;">Telco</span>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:.75rem 1rem;">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Idea Spark ↗</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:12px;line-height:1.65;color:var(--white);">A telecom brand installs an earthquake early-warning push notification system — making their network the infrastructure of survival, not just connection.</div>
+      </div>
+      <a href="https://www.indonesia-investments.com/business/risks/natural-disasters/item243" target="_blank" class="btn" style="font-size:10px;align-self:flex-start;">Source ↗</a>
+    </div>
+
+    <!-- 08 Middle Class Evaporating -->
+    <div style="background:var(--bg2);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--blue);">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">📉 Economy</span>
+        <span style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">Carnegie Endowment · UGM · Jakarta Globe</span>
+      </div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;">GDP Grows 5% Annually.<br>13 Million People Left<br>the Middle Class.</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:12px;line-height:1.7;color:#aaa;">In 2018, 60 million Indonesians were middle class. By 2025: 46.7 million — a loss of over 13 million people. Meanwhile Indonesia's GDP grew at ~5% per year throughout that same period. More than half of all Indonesians now live just below the middle-class threshold. The economy grew. The people got poorer.</div>
+      <div style="height:1px;background:var(--bg3);"></div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">The Tension</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;line-height:1.65;color:var(--gray);">Indonesia's economic story looks perfect in a spreadsheet and brutal on the ground. 50% of Indonesians are one crisis away from poverty — but the headline number says the country is thriving.</div>
+      </div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Way In →</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">Banking / Fintech</span>
+          <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">FMCG</span>
+          <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">Retail</span>
+          <span class="label-block lb-blue" style="font-size:9px;padding:3px 8px;">NGO</span>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:.75rem 1rem;">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Idea Spark ↗</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:12px;line-height:1.65;color:var(--white);">A bank redefines "wealth" for 50% of Indonesians — building products designed for the aspiring class, not the existing one, and running the most honest financial campaign in the country's history.</div>
+      </div>
+      <a href="https://carnegieendowment.org/research/2025/10/indonesias-fragile-middle-class?lang=en" target="_blank" class="btn" style="font-size:10px;align-self:flex-start;">Source ↗</a>
+    </div>
+
+    <!-- 09 Gen Z NEET -->
+    <div style="background:var(--bg2);border-right:1px solid var(--bg3);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--yellow);">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">🎓 Youth</span>
+        <span style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);">BPS Indonesia · HR Asia · SAGE Journals</span>
+      </div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:32px;line-height:.95;color:var(--white);letter-spacing:-.01em;">10 Million Gen Z:<br>No School. No Job.<br>No Training.</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-size:12px;line-height:1.7;color:#aaa;">Nearly 10 million Indonesian Gen Z youth are NEET — Not in Education, Employment, or Training. Youth unemployment hits 16.26%, the highest of all age groups. Indonesia's largest-ever generation is also its most stranded. And the NEET rate among young women is the highest in all of ASEAN.</div>
+      <div style="height:1px;background:var(--bg3);"></div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">The Tension</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:13px;line-height:1.65;color:var(--gray);">Indonesia's demographic dividend — the promise of 270 million young people driving the economy — is silently becoming a demographic debt. The largest generation is also the most idle.</div>
+      </div>
+      <div>
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;">Way In →</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">EdTech</span>
+          <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">Skills Platforms</span>
+          <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">Government</span>
+          <span class="label-block lb-yellow" style="font-size:9px;padding:3px 8px;">FMCG</span>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:4px;padding:.75rem 1rem;">
+        <div style="font-family:'PPNY',serif;font-weight:500;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;">Idea Spark ↗</div>
+        <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:12px;line-height:1.65;color:var(--white);">A skills platform turns the 10 million NEET statistic into a public campaign — recruiting Indonesia's "invisible generation" by name, making their potential visible before it disappears.</div>
+      </div>
+      <a href="https://hr.asia/asean/indonesias-largest-generation-confronts-skills-gaps-ai-disruption-and-a-tightening-job-market/" target="_blank" class="btn" style="font-size:10px;align-self:flex-start;">Source ↗</a>
+    </div>
+
+    <!-- spacer card to balance grid -->
+    <div style="background:var(--bg);border-bottom:1px solid var(--bg3);padding:1.5rem;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;min-height:200px;">
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:48px;line-height:1;color:var(--bg3);letter-spacing:-.02em;">MORE<br>SOON</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:11px;color:var(--muted);text-align:center;max-width:160px;line-height:1.65;">This section refreshes weekly with new Indonesian insights.</div>
+    </div>
+
+  </div>
+
+  <div class="callout" style="background:var(--bg2);">
+    <div class="callout-icon" style="background:var(--bg3);">§</div>
+    <div>
+      <div class="callout-label">How to Use This Section</div>
+      <p class="callout-text">Each insight is a <strong>real, sourced Indonesian truth</strong> — not a trend, not a cultural stereotype. The creative tension is where the idea lives. <strong>The best way ins are the ones most people in the room already knew but never thought to use.</strong> This section refreshes weekly.</p>
+    </div>
+  </div>
+</div>
+
 <!-- FOOTER -->
-<footer class="footer">
+<!-- CREATOR STRIP -->
+<div style="border-top:1px solid var(--bg3);display:grid;grid-template-columns:1fr auto;align-items:center;padding:1rem 1.5rem;gap:1rem;">
+  <div style="display:flex;align-items:center;gap:14px;">
+    <div style="width:40px;height:40px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-family:'PPNYCond',serif;font-weight:800;font-size:15px;color:#fff;flex-shrink:0;letter-spacing:-.01em;">SH</div>
+    <div>
+      <div style="font-family:'PPNYCond',serif;font-weight:800;font-size:18px;color:var(--white);letter-spacing:-.01em;line-height:1;">Syandy Han</div>
+      <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:11px;color:var(--muted);margin-top:1px;">Creator & Curator · Bosyan Ad Feeds</div>
+    </div>
+    <a href="https://id.linkedin.com/in/syandy-han-97061494" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-family:'PPNY',serif;font-weight:500;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--bg3);padding:6px 12px;border-radius:3px;text-decoration:none;transition:border-color .12s,color .12s;" onmouseover="this.style.borderColor='#fff';this.style.color='#fff'" onmouseout="this.style.borderColor='var(--bg3)';this.style.color='var(--muted)'">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      LinkedIn ↗
+    </a>
+  </div>
+  <div style="text-align:right;">
+    <div style="font-family:'PPNY',serif;font-weight:300;font-style:italic;font-size:11px;color:var(--muted);line-height:1.7;">June 23, 2026 · Cannes Week<br>Adweek · Contagious · LBBOnline · Ad Age</div>
+  </div>
+</div>
+
+<footer class="footer" style="padding-top:.75rem;">
   <div class="footer-mark">
     <span class="footer-bosyan">BOSYAN</span>
     <span class="footer-ad">AD</span>
     <span class="footer-feeds">FEEDS</span>
   </div>
-  <div class="footer-meta">June 23, 2026 · Cannes Week<br>Adweek · Contagious · LBBOnline · Ad Age</div>
+  <div class="footer-meta" style="font-size:10px;">© 2026 · All insights are sourced & credited.</div>
 </footer>
 
 <div class="share-toast" id="toast">↗ Link copied to clipboard</div>
